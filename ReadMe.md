@@ -1,1 +1,1 @@
-Repository for Android Project Organizer App
+Repository for Android Project Organizer App.
