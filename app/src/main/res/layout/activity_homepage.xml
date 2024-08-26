@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_welcome"
+        android:textSize="50sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <ImageView
+        android:id="@+id/icon_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/icon_welcome_description"
+        app:layout_constraintEnd_toEndOf="@+id/text_welcome"
+        app:layout_constraintStart_toStartOf="@+id/text_welcome"
+        app:layout_constraintTop_toBottomOf="@+id/text_welcome"
+        app:srcCompat="@drawable/icons8_plan_100" />
+
+    <Button
+        android:id="@+id/btn_dataTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:width="150dp"
+        android:height="60dp"
+        android:text="@string/button_dataTree"
+        android:textSize="16sp"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/icon_welcome"
+        app:layout_constraintStart_toStartOf="@+id/icon_welcome"
+        app:layout_constraintTop_toBottomOf="@+id/icon_welcome" />
+
+    <Button
+        android:id="@+id/btn_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:width="150dp"
+        android:height="60dp"
+        android:text="@string/button_notes"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dataTree"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_dataTree"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dataTree" />
+
+    <Button
+        android:id="@+id/btn_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:width="150dp"
+        android:height="60dp"
+        android:text="@string/button_reminders"
+        app:layout_constraintEnd_toEndOf="@+id/btn_notes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_notes"
+        app:layout_constraintTop_toBottomOf="@+id/btn_notes" />
+
+    <Button
+        android:id="@+id/btn_expenditure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:width="150dp"
+        android:height="60dp"
+        android:text="@string/button_expenditures"
+        app:layout_constraintEnd_toEndOf="@+id/btn_reminder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_reminder"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reminder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
